@@ -43,7 +43,7 @@ export const Home = () => {
         <div className="hero-text">
           <h1>Applications Are Open!</h1>
           <p>
-            Applications for joining our team are currently open until mid September.
+            Applications for joining our team are currently open until 11:59 pm on September 13th.
             <br />
             Explore roles in admin, analytics, electrical, and mechanical sub-teams <a href="/teams">here</a>!
             <div class="py-3" />
