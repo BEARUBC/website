@@ -26,7 +26,7 @@ export const Joinus = () => {
           <div class="text-center">
             <a
               class="btn btn-primary"
-              href="https://forms.gle/xLtC3JM6MHo5hAPZ6"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf3bVoMoGfQl60c2ORBBDfCoKgjDWdWURr7DCVD5fQL_VxZAQ/viewform"
               role="button"
             >
               APPLY NOW

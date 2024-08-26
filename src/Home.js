@@ -41,17 +41,14 @@ export const Home = () => {
           className="hero-image"
         />
         <div className="hero-text">
-          <h1>Applications Open in September!</h1>
+          <h1>Applications Are Open!</h1>
           <p>
-            Applications for joining our team are currently closed but will reopen in September.
+            Applications for joining our team are currently open until mid September.
             <br />
-            Explore roles in admin, analytics, electrical, and mechanical sub-teams <a href="/teams">here</a>! Follow our Instagram for more updates!
+            Explore roles in admin, analytics, electrical, and mechanical sub-teams <a href="/teams">here</a>!
             <div class="py-3" />
-            Applications open at the end of August and close mid September at
-            11:59PM.
-            {/* <div class="py-3" />
-            Click <a href="https://forms.gle/A6JVjPZBHqhZTVBr5">here</a> to
-            apply! */}
+            Click <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3bVoMoGfQl60c2ORBBDfCoKgjDWdWURr7DCVD5fQL_VxZAQ/viewform">here</a> to
+            apply!
           </p>
         </div>
       </div>
