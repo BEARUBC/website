@@ -16,10 +16,9 @@ import ubcmaterials from "./Photos/Bronze/ubcmaterials.jpg";
 //slide images:
 import slide1 from "./Photos/Thank You/fraser valley thank you.png";
 import slide2 from "./Photos/Thank You/VHP thank you 1.png";
-import slide3 from "./Photos/Thank You/VHP thank you 2.png";
-import slide4 from "./Photos/Thank You/pentland thank you.png";
+import slide3 from "./Photos/Thank You/pentland thank you.png";
 
-const numberSlides = 4;
+const numberSlides = 3;
 const dots = document.getElementsByClassName("dot");
 const slides = document.getElementsByClassName("slide");
 const delay = 8000;
@@ -75,17 +74,13 @@ function Slideshow() {
             <img src={slide2} alt="victoria hand project"/>
         </div>
         <div class="slide">
-            <img src={slide3} alt="victoria hand project"/>
-        </div>
-        <div class="slide">
-            <img src={slide4} alt="pentland prosthetics & othotics"/>
+            <img src={slide3} alt="pentland prosthetics & othotics"/>
         </div>
       </div>
       <div class="dot-container">
         <span class="dot active" onClick={() => setSlideIndex(0)}></span>
         <span class="dot" onClick={() => setSlideIndex(1)}></span>
         <span class="dot" onClick={() => setSlideIndex(2)}></span>
-        <span class="dot" onClick={() => setSlideIndex(3)}></span>
       </div>
     </div>
   );
