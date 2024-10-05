@@ -5,7 +5,8 @@ import hand from "./Photos/hand.png";
 import mission from "./Photos/mission.png";
 import vision from "./Photos/vision.png";
 import research from "./Photos/research.png";
-import announcement from "./Photos/announcement.png";
+// import announcement from "./Photos/announcement.png";
+import cybathlon from "./Photos/cybathlon-logos.png";
 
 export const Home = () => {
   return (
@@ -34,7 +35,9 @@ export const Home = () => {
           <div class="py-3" />
         </div>
       </div>
-      <div className="hero-container">
+
+      {/* Since applications are closed, this is commented for now */}
+      {/* <div className="hero-container">
         <img
           src={announcement}
           alt="announcementImage"
@@ -51,7 +54,26 @@ export const Home = () => {
             apply!
           </p>
         </div>
+      </div> */}
+
+      <div className="hero-container">
+        <img
+          src={cybathlon}
+          alt="announcementImage"
+          className="hero-image"
+        />
+        <div className="hero-text">
+          <h1>CYBATHLON 2024!</h1>
+          <p>
+            We are currently all-hands-on-deck for <a href="https://cybathlon.ethz.ch/en/events/edition/cybathlon-2024">CYBATHLON 2024!</a> Our team is building GRASP, a trans-radial smart bionic arm designed to improve the daily life of amputees.
+            <br/><br/>
+            In late October, we'll be submitting GRASP to the <a href="https://cybathlon.ethz.ch/en/event/disciplines/arm"> Arm Prosthesis Race</a>, one of the eight different discipline categories in the competition. Bionics will be meeting locally for the CYBATHLON between the 24th and the 26th in the Osborne Center, where University of Alberta's team BLINC will be competing as well. 
+            <br/><br/>
+            Click <a href="/grasp">here</a> for more info on GRASP!
+          </p>
+        </div>
       </div>
+
       <div class="py-3" />
       <div className="hero-container">
         <div className="hero-text">
