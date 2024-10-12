@@ -1,101 +1,133 @@
+"use client";
+
+import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls, useGLTF, Text } from "@react-three/drei";
+import { useEffect, useRef } from "react";
+import * as THREE from "three";
 import Image from "next/image";
+import title from "./assets/bionics-outline.png";
 
-export default function Home() {
+const FloatingDots = () => {
+  const dotCount = 100;
+  const dotsRef = useRef<THREE.Group>(null);
+
+  useEffect(() => {
+    if (dotsRef.current) {
+      for (let i = 0; i < dotCount; i++) {
+        const dot = new THREE.Mesh(
+          new THREE.SphereGeometry(0.01, 16, 16),
+          new THREE.MeshBasicMaterial({ color: 'white' })
+        );
+        dot.position.set(Math.random() * 10 - 5, Math.random() * 10 - 5, Math.random() * 10 - 5);
+        dot.userData = { initialY: dot.position.y };
+        dotsRef.current.add(dot);
+      }
+    }
+  }, [dotsRef]);
+
+  useFrame(() => {
+    if (dotsRef.current) {
+      dotsRef.current.children.forEach(dot => {
+        dot.position.y = dot.userData.initialY + Math.sin(Date.now() * 0.001 + dot.position.x) * 0.5;
+      });
+    }
+  });
+
+  return <group ref={dotsRef} />;
+};
+
+const Model = () => {
+  const { scene } = useGLTF("/assets/leticia.glb");
+  const ref = useRef<THREE.Object3D>();
+
+  useEffect(() => {
+    let frameId: number;
+    const rotateModel = () => {
+      if (ref.current) {
+        ref.current.rotation.x += 0.005;
+        ref.current.rotation.y += 0.01;
+      }
+      frameId = requestAnimationFrame(rotateModel);
+    };
+    rotateModel();
+    return () => cancelAnimationFrame(frameId);
+  }, []);
+
+  return <primitive ref={ref} object={scene} scale={1.2} />;
+};
+
+const Home = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="relative flex flex-col items-center justify-center gap-16">
+      {/* Full-page section */}
+      <section className="relative h-screen w-full flex items-center justify-center bg-secondary text-white text-center pb-32">
+        {/* Canvas for 3D model */}
+        <div className="absolute inset-0 z-0">
+          <Canvas>
+            <ambientLight intensity={0.5} />
+            <directionalLight position={[5, 5, 5]} />
+            <Model />
+            <FloatingDots />
+            <OrbitControls enableZoom={false} />
+          </Canvas>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        {/* Title */}
+        <Image src={title} alt="Bionics" width={600} height={600} className="z-50" />
+      </section>
+
+      {/* About Bionics: permanent section, centered */}
+      <section className="w-full px-6 md:px-20 py-10 flex flex-col items-center">
+        <h2 className="text-3xl font-semibold mb-4 text-secondary">About Bionics</h2>
+        <p className="text-md md:text-lg text-foreground px-4 md:w-5/6">
+          Bionics is a student-led organization at the University of California, San Diego. We are dedicated to providing students with opportunities to learn about the intersection of biology and technology.
+        </p>
+      </section>
+
+      {/* Current Events: variable section, centered */}
+      <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center bg-gray-200">
+        <p className="text-xs text-ternary">CURRENT EVENTS</p>
+        <h2 className="text-3xl font-semibold mb-4 text-secondary">CYBATHLON 2024</h2>
+        <p className="text-md md:text-lg text-foreground px-4 md:w-5/6">
+        We are currently all-hands-on-deck for CYBATHLON 2024! Our team is building GRASP, a trans-radial smart bionic arm designed to improve the daily life of amputees.
+
+        In late October, we'll be submitting GRASP to the Arm Prosthesis Race, one of the eight different discipline categories in the competition. Bionics will be meeting locally for the CYBATHLON between the 24th and the 26th in the Osborne Center, where University of Alberta's team BLINC will be competing as well.
+
+        Click here for more info on GRASP!
+        </p>
+      </section>
+
+      {/* Our Mission: left text, right image */}
+      <section className="w-full px-6 md:px-20 py-10 flex flex-col md:flex-row items-center px-4 md:w-5/6">
+        <div className="w-full md:w-1/2 text-left">
+          <h2 className="text-3xl font-semibold mb-4 text-secondary">Section 1</h2>
+          <p className="text-md md:text-lg text-foreground">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nisi enim. Mauris auctor vehicula lorem, vitae fermentum sapien.
+          </p>
+        </div>
+        <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center">
+          <div className="h-96 w-96 bg-gray-300 flex items-center justify-center">
+            Image 1
+          </div>
+        </div>
+      </section>
+
+      {/* Our Vision: left image, right text */}
+      <section className="w-full px-6 md:px-20 py-10 flex flex-col md:flex-row-reverse items-center px-4 md:w-5/6">
+        <div className="w-full md:w-1/2 text-right">
+          <h2 className="text-3xl font-semibold mb-4 text-secondary">Section 2</h2>
+          <p className="text-md md:text-lg text-foreground">
+            Nulla facilisi. Nam cursus, erat in auctor egestas, nulla massa consectetur felis, non sodales urna mi vel purus.
+          </p>
+        </div>
+        <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center">
+          <div className="h-96 w-96 bg-gray-300 flex items-center justify-center">
+            Image 2
+          </div>
+        </div>
+      </section>
+    </main>
   );
-}
+};
+
+export default Home;
