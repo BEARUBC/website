@@ -26,7 +26,7 @@ const Footer = () => {
                                 <Link href="/contact">Contact</Link>
                             </li>
                             <li>
-                                <Link href="/your-reviews">Your Reviews</Link>
+                                <Link href="/your-reviews">Sponsors</Link>
                             </li>
                         </ul>
                     </div>
@@ -34,10 +34,10 @@ const Footer = () => {
                         <h2 className="mb-6 text-sm font-semibold text-background">Follow Us</h2>
                         <ul className="text-neutral-200">
                             <li className="mb-4">
-                                <a href="https://twitter.com/TalkingAlbums/" target="_blank">Twitter</a>
+                                <a href="https://twitter.com/TalkingAlbums/" target="_blank">Instagram</a>
                             </li>
                             <li>
-                                <a href="https://open.spotify.com/user/31p5v5yjrwpqkvyf3ptktfbrtlha/" target="_blank">Spotify</a>
+                                <a href="https://open.spotify.com/user/31p5v5yjrwpqkvyf3ptktfbrtlha/" target="_blank">Instagram</a>
                             </li>
                         </ul>
                     </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                         <h2 className="mb-6 text-sm font-semibold text-background">Community</h2>
                         <ul className="text-neutral-200">
                             <li className="mb-4">
-                            <a href="https://discord.com/invite/talkingalbums/" target="_blank">Discord</a>
+                            <a href="https://discord.com/invite/talkingalbums/" target="_blank">Facebook</a>
                             </li>
                         </ul>
                     </div>

@@ -6,6 +6,8 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import Image from "next/image";
 import title from "./assets/bionics-outline.png";
+import Scroller from "./components/Scroller";
+import teamphoto from "./assets/team-photo.png";
 
 const FloatingDots = () => {
   const dotCount = 100;
@@ -58,7 +60,7 @@ const Model = () => {
 
 const Home = () => {
   return (
-    <main className="relative flex flex-col items-center justify-center gap-16">
+    <main className="relative flex flex-col items-center justify-center">
       {/* Full-page section */}
       <section className="relative h-screen w-full flex items-center justify-center bg-secondary text-white text-center pb-32">
         {/* Canvas for 3D model */}
@@ -73,59 +75,52 @@ const Home = () => {
         </div>
 
         {/* Title */}
-        <Image src={title} alt="Bionics" width={600} height={600} className="z-50" />
+        <Image src={title} alt="Bionics" width={600} height={600} className="z-30" />
       </section>
 
-      {/* About Bionics: permanent section, centered */}
-      <section className="w-full px-6 md:px-20 py-10 flex flex-col items-center">
-        <h2 className="text-3xl font-semibold mb-4 text-secondary">About Bionics</h2>
-        <p className="text-md md:text-lg text-foreground px-4 md:w-5/6">
-          Bionics is a student-led organization at the University of California, San Diego. We are dedicated to providing students with opportunities to learn about the intersection of biology and technology.
+      {/* Current Events: variable section */}
+      <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center">
+        <p className="text-xs text-secondary tracking-widest">CURRENT EVENTS</p>
+        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Cybathlon 2024</h2>
+
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
+        We are currently all-hands-on-deck for CYBATHLON 2024! 
         </p>
-      </section>
-
-      {/* Current Events: variable section, centered */}
-      <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center bg-gray-200">
-        <p className="text-xs text-ternary">CURRENT EVENTS</p>
-        <h2 className="text-3xl font-semibold mb-4 text-secondary">CYBATHLON 2024</h2>
-        <p className="text-md md:text-lg text-foreground px-4 md:w-5/6">
-        We are currently all-hands-on-deck for CYBATHLON 2024! Our team is building GRASP, a trans-radial smart bionic arm designed to improve the daily life of amputees.
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
+        Our team is building GRASP, a trans-radial smart bionic arm designed to improve the daily life of amputees.
 
         In late October, we'll be submitting GRASP to the Arm Prosthesis Race, one of the eight different discipline categories in the competition. Bionics will be meeting locally for the CYBATHLON between the 24th and the 26th in the Osborne Center, where University of Alberta's team BLINC will be competing as well.
-
+        </p>
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
         Click here for more info on GRASP!
         </p>
       </section>
 
-      {/* Our Mission: left text, right image */}
-      <section className="w-full px-6 md:px-20 py-10 flex flex-col md:flex-row items-center px-4 md:w-5/6">
-        <div className="w-full md:w-1/2 text-left">
-          <h2 className="text-3xl font-semibold mb-4 text-secondary">Section 1</h2>
-          <p className="text-md md:text-lg text-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nisi enim. Mauris auctor vehicula lorem, vitae fermentum sapien.
-          </p>
-        </div>
-        <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center">
-          <div className="h-96 w-96 bg-gray-300 flex items-center justify-center">
-            Image 1
-          </div>
-        </div>
+      {/* Scroller of sponsors */}
+      <section className="w-full flex items-center justify-center pt-10 pb-20">
+        <Scroller />
       </section>
 
-      {/* Our Vision: left image, right text */}
-      <section className="w-full px-6 md:px-20 py-10 flex flex-col md:flex-row-reverse items-center px-4 md:w-5/6">
-        <div className="w-full md:w-1/2 text-right">
-          <h2 className="text-3xl font-semibold mb-4 text-secondary">Section 2</h2>
-          <p className="text-md md:text-lg text-foreground">
-            Nulla facilisi. Nam cursus, erat in auctor egestas, nulla massa consectetur felis, non sodales urna mi vel purus.
-          </p>
-        </div>
-        <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center">
-          <div className="h-96 w-96 bg-gray-300 flex items-center justify-center">
-            Image 2
-          </div>
-        </div>
+      {/* About Us: permanent section */}
+      <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center bg-gray-200">
+        <p className="text-xs text-secondary tracking-widest">ABOUT US</p>
+        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Innovating Bionics</h2>
+
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
+        We are currently all-hands-on-deck for CYBATHLON 2024! 
+        </p>
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
+        Our team is building GRASP, a trans-radial smart bionic arm designed to improve the daily life of amputees.
+
+        In late October, we'll be submitting GRASP to the Arm Prosthesis Race, one of the eight different discipline categories in the competition. Bionics will be meeting locally for the CYBATHLON between the 24th and the 26th in the Osborne Center, where University of Alberta's team BLINC will be competing as well.
+        </p>
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
+        Click here for more info on GRASP!
+        </p>
       </section>
+
+
+      
     </main>
   );
 };

@@ -45,7 +45,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {open && (
-        <nav className="absolute top-16 left-0 w-full bg-primary flex flex-col items-center space-y-4 p-8 md:hidden">
+        <nav className="absolute top-16 left-0 w-full bg-primary flex flex-col items-center space-y-4 p-8 md:hidden z-50">
           <Link href="/" onClick={closeMenu}> TEAMS </Link>
           <Link href="/about" onClick={closeMenu}> PROJECTS </Link>
           <Link href="/contact" onClick={closeMenu}> SPONSORS </Link>
