@@ -1,0 +1,122 @@
+* {box-sizing:border-box}
+
+/* keep */
+.parent {
+  position: relative;
+}
+
+/* keep */
+p.subTitle {
+  font-style: italic;
+  position: absolute;
+  font-size: small;
+  line-height: 0;
+  white-space: nowrap;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* keep */
+.backimage {
+  /* background-image: url("./Photos/ranger-4df6c1b6.png"); */
+  background-color: #8098bf;
+}
+
+/* keep */
+.headerWhite {
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 0.1em;
+  text-decoration-thickness: 1px;
+}
+
+/* keep */
+.headerBlue {
+  color: #152349;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 0.1em;
+  text-decoration-thickness: 1px;
+}
+
+/* keep */
+img.teamPhotos {
+  width: 300px;
+  height: 225px;
+}
+
+/* keep */
+img.teamimg {
+  position: relative;
+  clip-path: circle();
+  width: 150px;
+  height: auto;
+  display: "block";
+  z-index: 1;
+}
+
+/* kee */
+img.captain {
+  position: relative;
+  clip-path: circle();
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  display: "block";
+  z-index: -1;
+}
+
+/* keep */
+img.memberimg {
+  position: relative;
+  clip-path: circle();
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  overflow: hidden;
+  display: "block";
+  z-index: 1;
+}
+
+/* kep */
+img.h120 {
+  height: 120px;
+}
+
+/* keep */
+img.memberimg-z {
+  position: relative;
+  clip-path: circle();
+  width: 120px;
+  height: auto;
+  display: "block";
+  z-index: 1;
+}
+
+/* keep */
+p.joinusHeader {
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/* keep */
+.width-80 {
+  width: 100%;
+  margin: auto;
+}

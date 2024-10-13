@@ -1,4 +1,3 @@
-// components/Card.tsx
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 
