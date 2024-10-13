@@ -20,13 +20,16 @@ const Footer = () => {
                         <h2 className="mb-6 text-sm font-semibold text-background">Pages</h2>
                         <ul className="text-neutral-200">
                             <li className="mb-4">
-                                <Link href="/about">About</Link>
+                                <Link href="/teams">Teams</Link>
                             </li>
                             <li className="mb-4">
-                                <Link href="/contact">Contact</Link>
+                                <Link href="/projects">Projects</Link>
+                            </li>
+                            <li className="mb-4">
+                                <Link href="/sponsors">Sponsors</Link>
                             </li>
                             <li>
-                                <Link href="/your-reviews">Sponsors</Link>
+                                <Link href="/contact">Contact</Link>
                             </li>
                         </ul>
                     </div>
@@ -34,18 +37,24 @@ const Footer = () => {
                         <h2 className="mb-6 text-sm font-semibold text-background">Follow Us</h2>
                         <ul className="text-neutral-200">
                             <li className="mb-4">
-                                <a href="https://twitter.com/TalkingAlbums/" target="_blank">Instagram</a>
+                                <a href="https://twitter.com/twitter/" target="_blank">Instagram</a>
+                            </li>
+                            <li className="mb-4">
+                                <a href="https://twitter.com/twitter/" target="_blank">Facebook</a>
+                            </li>
+                            <li className="mb-4">
+                                <a href="https://twitter.com/twitter/" target="_blank">Twitter</a>
                             </li>
                             <li>
-                                <a href="https://open.spotify.com/user/31p5v5yjrwpqkvyf3ptktfbrtlha/" target="_blank">Instagram</a>
+                                <a href="https://twitter.com/twitter/" target="_blank">LinkedIn</a>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h2 className="mb-6 text-sm font-semibold text-background">Community</h2>
+                        <h2 className="mb-6 text-sm font-semibold text-background">Other Links</h2>
                         <ul className="text-neutral-200">
                             <li className="mb-4">
-                            <a href="https://discord.com/invite/talkingalbums/" target="_blank">Facebook</a>
+                            <a href="https://engineering.ubc.ca/engineering-design-teams/bionics" target="_blank">UBC Page</a>
                             </li>
                         </ul>
                     </div>

@@ -30,10 +30,10 @@ const Navbar = () => {
 
       {/* Desktop menu */}
       <nav className="hidden md:flex space-x-4">
-        <Link href="/">TEAMS</Link>
-        <Link href="/about">PROJECTS</Link>
-        <Link href="/contact">SPONSORS</Link>
-        <Link href="/blog">CONTACT</Link>
+        <Link href="/teams">TEAMS</Link>
+        <Link href="/projects">PROJECTS</Link>
+        <Link href="/sponsors">SPONSORS</Link>
+        <Link href="/contact">CONTACT</Link>
       </nav>
 
       {/* Mobile menu icon */}
