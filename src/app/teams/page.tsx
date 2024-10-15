@@ -1,7 +1,5 @@
-// note
-// the code has gotten dangerously out of control for this page
+// the code has gotten very very out of control for this page
 // i'll fix it soon :)
-
 
 //admin
 // import FXing from "../assets/headshots/Frank Xing.jpg";

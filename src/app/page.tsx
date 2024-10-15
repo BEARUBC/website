@@ -18,6 +18,26 @@ import Scroller from "./components/Scroller";
 import Card from "./components/Card";
 import Accordion from "./components/Accordion";
 
+// FAQ stuff
+const FAQ = [
+  {
+    question: "When can I apply?",
+    answer: "The best time to apply is during our recruitment season, which occurs at the start of every winter session semester at the end of August! However, our email inbox remains open throughout the year.",
+  },
+  {
+    question: "Will I be considered if I do not have prior experience being on a design team?",
+    answer: "Yes! We encourage all candidates interested in joining the team to send in an application, regardless of what your experience may include. We are ultimately looking for those who are willing to dedicate the time and energy to learn and further the goals of our team.",
+  },
+  {
+    question: "What sub-team should I apply for?",
+    answer: "The final choice that you list on your application is up to you! All we ask is that you have an idea of which sub-team(s) aligns best with your own interests or studies, to better help us decide what the best fit is for you.",
+  },
+  {
+    question: "How do I join the research team?",
+    answer: "The research team is a new addition to our team as a whole, and requires membership on one of our sub-teams to be eligible for consideration. Recommendation from your sub-team lead is also required to apply for a position on the research team. All applications will be reviewed by the executive team and the professor/graduate student in charge.",
+  },
+];
+
 // This is all for the render
 const FloatingDots = () => {
   const dotCount = 100;
@@ -47,26 +67,6 @@ const FloatingDots = () => {
 
   return <group ref={dotsRef} />;
 };
-
-// FAQ stuff
-const FAQ = [
-  {
-    question: "When can I apply?",
-    answer: "The best time to apply is during our recruitment season, which occurs at the start of every winter session semester at the end of August! However, our email inbox remains open throughout the year.",
-  },
-  {
-    question: "Will I be considered if I do not have prior experience being on a design team?",
-    answer: "Yes! We encourage all candidates interested in joining the team to send in an application, regardless of what your experience may include. We are ultimately looking for those who are willing to dedicate the time and energy to learn and further the goals of our team.",
-  },
-  {
-    question: "What sub-team should I apply for?",
-    answer: "The final choice that you list on your application is up to you! All we ask is that you have an idea of which sub-team(s) aligns best with your own interests or studies, to better help us decide what the best fit is for you.",
-  },
-  {
-    question: "How do I join the research team?",
-    answer: "The research team is a new addition to our team as a whole, and requires membership on one of our sub-teams to be eligible for consideration. Recommendation from your sub-team lead is also required to apply for a position on the research team. All applications will be reviewed by the executive team and the professor/graduate student in charge.",
-  },
-];
 
 // Main model
 const Model = () => {
@@ -155,7 +155,7 @@ const Home = () => {
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
           UBC Bionics is always looking for passionate and dedicated students to join our team. If you are interested in bionics, robotics, or engineering, we would love to have you on board! 
         </p>
-        
+
         {/* FAQ */}
         <Accordion items={FAQ} />
       </section>
