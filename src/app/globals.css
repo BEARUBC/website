@@ -46,3 +46,7 @@ body {
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
+
+.bg-radial-gradient {
+  background: radial-gradient(circle, var(--ternary), var(--secondary));
+}

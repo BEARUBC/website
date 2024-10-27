@@ -85,11 +85,9 @@ const Sponsors = () => {
         <Image src={ieee} alt="IEEE" height={100} />
       </div>
 
-      {/* Supporters */}
-      <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center pt-32">
-        <p className="text-xs text-secondary tracking-widest">♡ THANK YOU ♡</p>
-        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Supporting Organizations</h2>
-      </section>
+      {/* Supporting Organizations */}
+      <h2 className="text-xl md:text-2xl tracking-tight pt-16">SUPPORTING ORGANIZATIONS</h2>
+      <hr className="w-5/6 border-1 pb-4" />
 
       <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-24 mb-4">
         <Image src={asee} alt="ASEE" height={100} />

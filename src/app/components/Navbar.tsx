@@ -23,13 +23,13 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex items-center gap-4">
         <Image src={Logo} alt="Logo" className="w-16 h-16" />
-        <Link href="/" className="text-2xl font-bold tracking-widest" onClick={closeMenu}>
+        <Link href="/" className="text-2xl tracking-wide" onClick={closeMenu}>
           UBC BIONICS
         </Link>
       </div>
 
       {/* Desktop menu */}
-      <nav className="hidden md:flex space-x-4">
+      <nav className="hidden md:flex space-x-4 tracking-wide">
         <Link href="/teams">TEAMS</Link>
         <Link href="/projects">PROJECTS</Link>
         <Link href="/sponsors">SPONSORS</Link>
@@ -45,11 +45,11 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {open && (
-        <nav className="absolute top-16 left-0 w-full bg-primary flex flex-col items-center space-y-4 p-8 md:hidden z-50">
-          <Link href="/" onClick={closeMenu}> TEAMS </Link>
-          <Link href="/about" onClick={closeMenu}> PROJECTS </Link>
-          <Link href="/contact" onClick={closeMenu}> SPONSORS </Link>
-          <Link href="/blog" onClick={closeMenu}> CONTACT </Link>
+        <nav className="absolute top-16 left-0 w-full bg-primary flex flex-col items-center space-y-4 p-8 md:hidden z-50 tracking-wide">
+          <Link href="/teams" onClick={closeMenu}> TEAMS </Link>
+          <Link href="/projects" onClick={closeMenu}> PROJECTS </Link>
+          <Link href="/sponsors" onClick={closeMenu}> SPONSORS </Link>
+          <Link href="/contact" onClick={closeMenu}> CONTACT </Link>
         </nav>
       )}
     </header>
