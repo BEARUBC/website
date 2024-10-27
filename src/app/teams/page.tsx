@@ -154,7 +154,7 @@ const Teams = () => {
         <h2 className="text-4xl text-center mb-4">Admin</h2>
         <div className="mb-8 items-center justify-center">
           <p className="text-lg font-light text-center">
-          The administrative subteam is responsible for overseeing all the team's logistics, including finances, sponsorship, public relations, content creation, and more. We're responsible for everything from tracking the annual budget to engaging in community outreach, and we also handle the development of this website. You can often find us on all our social media platforms or at team events we've organized! 
+          The administrative subteam is responsible for overseeing all the team&apos;s logistics, including finances, sponsorship, public relations, content creation, and more. We&apos;re responsible for everything from tracking the annual budget to engaging in community outreach, and we also handle the development of this website. You can often find us on all our social media platforms or at team events we&apos;ve organized! 
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-24 place-items-center">
@@ -174,7 +174,7 @@ const Teams = () => {
         <h2 className="text-4xl text-center mb-4">Analytics</h2>
         <div className="mb-8 items-center justify-center">
           <p className="text-lg font-light text-center">
-          The analytics subteam uses data science and machine learning to improve the functionality of our current projects. For GRASP, we are focused on using computer vision (CV) to optimize the prosthetic arm's grips. For NERV, we are mainly focusing on EEG data analysis. Generally, our work includes programming with Python and performing data analysis on sensor information like EMG, FSR, EEG, etc.
+          The analytics subteam uses data science and machine learning to improve the functionality of our current projects. For GRASP, we are focused on using computer vision (CV) to optimize the prosthetic arm&apos;s grips. For NERV, we are mainly focusing on EEG data analysis. Generally, our work includes programming with Python and performing data analysis on sensor information like EMG, FSR, EEG, etc.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-24 place-items-center">
@@ -194,7 +194,7 @@ const Teams = () => {
         <h2 className="text-4xl text-center mb-4">Electrical</h2>
         <div className="mb-8 items-center justify-center">
           <p className="text-lg font-light text-center">
-          The electrical subteam focuses on developing and engineering the underlying infrastructure that spans from actuating the intended motion of the pilot to making sure the battery delivers energy; and everything in between! In the past, we've worked on creating our own custom muscle sensor to convert electric signals in your arm to signals that our processor can read. We coordinate with the subteams to make sure that the arm and hand movement are as seamless as possible.
+          The electrical subteam focuses on developing and engineering the underlying infrastructure that spans from actuating the intended motion of the pilot to making sure the battery delivers energy; and everything in between! In the past, we&apos;ve worked on creating our own custom muscle sensor to convert electric signals in your arm to signals that our processor can read. We coordinate with the subteams to make sure that the arm and hand movement are as seamless as possible.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-24 place-items-center">
@@ -214,7 +214,7 @@ const Teams = () => {
         <h2 className="text-4xl text-center mb-4">Mechanical</h2>
         <div className="mb-8 items-center justify-center">
           <p className="text-lg font-light text-center">
-          The mechanical subteam is responsible for the structural design of the projects and modeling the devices on CAD software. We research and develop mechanical designs via the engineering design process, prototyping, and use of SolidWorks. Additionally, we're responsible for the printing and assembly of the GRASP project, and are currently helping out with the headset for the NERV project.
+          The mechanical subteam is responsible for the structural design of the projects and modeling the devices on CAD software. We research and develop mechanical designs via the engineering design process, prototyping, and use of SolidWorks. Additionally, we&apos;re responsible for the printing and assembly of the GRASP project, and are currently helping out with the headset for the NERV project.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-24 place-items-center">
