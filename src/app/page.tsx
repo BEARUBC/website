@@ -12,6 +12,7 @@ import title from "./assets/bionics-outline.png";
 import teamphoto from "./assets/team-photo.png";
 import holdmug from "./assets/hold-mug.png";
 import bionicarm from "./assets/bionic-arm.png";
+import { FiChevronDown } from "react-icons/fi";
 
 // Components
 import Scroller from "./components/Scroller";
@@ -79,8 +80,8 @@ const Model = () => {
     let frameId: number;
     const rotateModel = () => {
       if (ref.current) {
-        ref.current.rotation.x += 0.005;
-        ref.current.rotation.y += 0.01;
+        ref.current.rotation.x += 0.001;
+        ref.current.rotation.y += 0.003;
       }
       frameId = requestAnimationFrame(rotateModel);
     };
@@ -99,6 +100,13 @@ const Model = () => {
 };
 
 const Home = () => {
+  const scrollToNextSection = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <main className="relative flex flex-col items-center justify-center">
       {/* Full-page section */}
@@ -116,6 +124,14 @@ const Home = () => {
 
         {/* Title */}
         <Image src={title} alt="Bionics" width={600} height={600} className="z-30 select-none" />
+
+        {/* Scroll Down Icon */}
+        <div
+          className="absolute bottom-32 cursor-pointer z-30 text-white"
+          onClick={scrollToNextSection}
+        >
+          <FiChevronDown size={48} style={{ strokeWidth: 1 }}/>
+        </div>
       </section>
 
       {/* Current Events */}
