@@ -17,6 +17,11 @@ const nextConfig = {
             destination: '/projects',
             permanent: true,
         },
+        {
+            source: '/pilot',
+            destination: '/contact',
+            permanent: true,
+        },
       ];
     },
   };
