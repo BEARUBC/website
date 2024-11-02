@@ -148,7 +148,7 @@ const Home = () => {
         In late October, we&apos;ll be submitting GRASP to the Arm Prosthesis Race, one of the eight different discipline categories in the competition. Bionics will be meeting locally for the CYBATHLON between the 24th and the 26th in the Osborne Center, where University of Alberta&apos;s team BLINC will be competing as well.
         </p>
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-        Click here for more info on GRASP!
+        Click <a href="/projects" className="text-blue-600 dark:text-blue-500 hover:underline">here</a> for more info on GRASP!
         </p>
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
         We also recently announced the addition of a brand new research team to UBC Bionics. This research team will collaborate on a collection of smaller group projects with UBC professors and graduate students, that will help members develop skills to aid to the advancement of our current project, GRASP.
