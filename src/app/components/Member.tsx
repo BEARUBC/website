@@ -49,11 +49,13 @@ const Member: React.FC<MemberProps> = ({ imageSrc, name, description, link, bio 
       </div>
       
       {/* Display name or bio text */}
-      <h2 className="text-md md:text-lg font-semibold">{name}</h2>
       {showBio && bio ? (
-        <p className="text-xs md:text-sm text-gray-600 italic">{bio}</p>
+        <p className="text-xs md:text-sm">{bio}</p>
       ) : (
-        description && <p className="text-xs md:text-sm text-gray-600 italic">{description}</p>
+        <>
+          <h2 className="text-md md:text-lg font-semibold">{name}</h2>
+          {description && <p className="text-xs md:text-sm text-gray-600 italic">{description}</p>}
+        </>
       )}
     </div>
   );

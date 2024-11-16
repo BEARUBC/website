@@ -1,106 +1,151 @@
 "use client";
 
+// The way I store this data will be refactored soon.
+
 import Image from "next/image";
 import Member from "../components/Member";
 import BLANK_PICTURE from "../assets/headshots/blank.jpg";
 
 // Captains
 import JoyceXi from "../assets/headshots/Joyce Xi.jpg";
-import KyleKochi from "../assets/headshots/Kyle Kochi.jpg";
+// import KyleKochi from "../assets/headshots/Kyle Kochi.jpg";
 
 const Captains = [
-  { imageSrc: JoyceXi, name: "Joyce Xi", description: "Captain" },
-  { imageSrc: KyleKochi, name: "Kyle Kochi", description: "Captain" },
-  { imageSrc: BLANK_PICTURE, name: "Albert Atkinson", description: "Pilot" },
+  { imageSrc: JoyceXi, name: "Joyce Xi", description: "Captain", link: "https://www.linkedin.com/in/joycexi/", bio: "I like birds" },
 ];
 
 // Admin
-import MelanieCheng from "../assets/headshots/Melanie Cheng.jpg";
-import BrandonAhYou from "../assets/headshots/Brandon Ah You.jpg";
-import SashaSabourin from "../assets/headshots/Sasha Sabourin.jpg";
+// import MelanieCheng from "../assets/headshots/Melanie Cheng.jpg";
+// import BrandonAhYou from "../assets/headshots/Brandon Ah You.jpg";
+// import SashaSabourin from "../assets/headshots/Sasha Sabourin.jpg";
 import KimTan from "../assets/headshots/Kim Tan.jpg";
-import LeticiaCid from "../assets/headshots/Leticia Cid.jpg";
 
 const Admin = [
-  { imageSrc: BrandonAhYou, name: "Brandon Ah You", description: "Admin Co-Lead" },
-  { imageSrc: MelanieCheng, name: "Melanie Cheng", description: "Admin Co-Lead" },
-  { imageSrc: KimTan, name: "KimTan", description: "" },
-  { imageSrc: LeticiaCid, name: "Leticia Cid", description: "" },
-  { imageSrc: SashaSabourin, name: "Sasha Sabourin", description: "" },
-  { imageSrc: BLANK_PICTURE, name: "Theo Zaurev", description: "" },
-  { imageSrc: BLANK_PICTURE, name: "Frank Xing", description: "" },
-  { imageSrc: BLANK_PICTURE, name: "Kimathra Reddy", description: "" },
-  { imageSrc: BLANK_PICTURE, name: "Hikmah Awosiyan", description: "" },
+  { imageSrc: BLANK_PICTURE, name: "Faraz Tehrani", description: "Web Developer", bio: "Hello! I'm currently managing this site :)" },
+  { imageSrc: KimTan, name: "Kim Tan", description: "", link: "https://www.linkedin.com/in/kim-tan-447715202", bio: "I have a golden retriver named Diesel...but he lives at home in Texas :(" },
+  { imageSrc: BLANK_PICTURE, name: "Sofya Fefelova", description: "Social Media Coordinator", bio: "I have a corgi named Maily" },
+  { imageSrc: BLANK_PICTURE, name: "Kruti Raval", description: "" },
 ];
 
 // Analytics
 import RachaelMacdougall from "../assets/headshots/Rachel MacDougall.jpg";
-import BuyangDaffa from "../assets/headshots/Buyang Daffa.jpg";
-import IrisXu from "../assets/headshots/Iris Xu.png";
-import KhueDo from "../assets/headshots/Khue Do.jpg";
+// import BuyangDaffa from "../assets/headshots/Buyang Daffa.jpg";
+// import IrisXu from "../assets/headshots/Iris Xu.png";
+// import KhueDo from "../assets/headshots/Khue Do.jpg";
+import LeticiaCid from "../assets/headshots/Leticia Cid.jpg";
 
 const Analytics = [
-  { imageSrc: RachaelMacdougall, name: "Rachael Macdougall", description: "Analytics Co-lead" },
-  { imageSrc: IrisXu, name: "Iris Xu", description: "Analytics Co-lead" },
-  { imageSrc: BuyangDaffa, name: "Buyang Daffa", description: "" },
-  { imageSrc: KhueDo, name: "Khue Do", description: "" },
-  { imageSrc: BLANK_PICTURE, name: "Lydia Davidson", description: "" },
-  { imageSrc: BLANK_PICTURE, name: "Raihan Arvi", description: "" },
-  { imageSrc: BLANK_PICTURE, name: "Luca Jones", description: "" },
+  { imageSrc: LeticiaCid, name: "Leticia Cid", description: "Co-Lead", link: "https://www.linkedin.com/in/leticia-cid/", bio: "I like brains and computers (and puffins)" },
+  { imageSrc: RachaelMacdougall, name: "Rachel MacDougall", description: "Co-Lead", link: "https://www.linkedin.com/in/rachel-macdougall" }
 ];
 
 // Electrical
-import AnthonyStewart from "../assets/headshots/Anthony Stewart.jpg";
+// import AnthonyStewart from "../assets/headshots/Anthony Stewart.jpg";
 import JustinThe from "../assets/headshots/Justin The.jpg";
-import NickSantoso from "../assets/headshots/Nick Santoso.jpg";
-import TeelaMoore from "../assets/headshots/Teela Moore.jpg";
-import RykerSchroeder from "../assets/headshots/Ryker Schroeder.jpg";
-import MichaelRoss from "../assets/headshots/Michael Ross.jpg";
+// import NickSantoso from "../assets/headshots/Nick Santoso.jpg";
+// import TeelaMoore from "../assets/headshots/Teela Moore.jpg";
+// import RykerSchroeder from "../assets/headshots/Ryker Schroeder.jpg";
+// import MichaelRoss from "../assets/headshots/Michael Ross.jpg";
 import ChathilRajamanthree from "../assets/headshots/Chathil Rajamanthree.jpg";
 import GhazalFallahpour from "../assets/headshots/Ghazal Fallahpour.jpg";
-import AlbinSoni from "../assets/headshots/Albin Soni.png";
+// import AlbinSoni from "../assets/headshots/Albin Soni.png";
 import ArpitKumar from "../assets/headshots/Arpit Kumar.jpg";
-import RonaldLi from "../assets/headshots/Ronald Li.jpg";
-import TiaanBoshoff from "../assets/headshots/Tiaan Boshoff.jpg";
-import WilliamJi from "../assets/headshots/William Ji.jpg";
+// import RonaldLi from "../assets/headshots/Ronald Li.jpg";
+// import TiaanBoshoff from "../assets/headshots/Tiaan Boshoff.jpg";
+// import WilliamJi from "../assets/headshots/William Ji.jpg";
 
 const Electrical = [
-  { imageSrc: TiaanBoshoff, name: "Tiaan Boshoff", description: "Electrical Co-Lead" },
-  { imageSrc: WilliamJi, name: "William Ji", description: "Electrical Co-Lead" },
-  { imageSrc: AnthonyStewart, name: "Anthony Stewart", description: "" },
-  { imageSrc: JustinThe, name: "Justin The", description: "" },
-  { imageSrc: NickSantoso, name: "Nick Santoso", description: "" },
-  { imageSrc: TeelaMoore, name: "Teela Moore", description: "" },
-  { imageSrc: RykerSchroeder, name: "Ryker Schroeder", description: "" },
-  { imageSrc: MichaelRoss, name: "Michael Ross", description: "" },
-  { imageSrc: ChathilRajamanthree, name: "Chathil Rajamanthree", description: "" },
-  { imageSrc: GhazalFallahpour, name: "Ghazal Fallahpour", description: "" },
-  { imageSrc: AlbinSoni, name: "Albin Soni", description: "" },
-  { imageSrc: ArpitKumar, name: "Arpit Kumar", description: "" },
-  { imageSrc: RonaldLi, name: "Ronald Li", description: "" },
+  { 
+    imageSrc: ChathilRajamanthree, 
+    name: "Chathil Rajamanthree", 
+    description: "Elec", 
+    link: "https://www.linkedin.com/in/chathilrajaman3/", 
+    bio: "I like electrons" 
+  },
+  { 
+    imageSrc: BLANK_PICTURE, 
+    name: "Alvin Shon", 
+    description: "Elec", 
+    link: "https://www.linkedin.com/in/alvinshon7567", 
+    bio: "I like bunnies" 
+  },
+  { 
+    imageSrc: BLANK_PICTURE, 
+    name: "Elin Lee", 
+    description: "Elec", 
+    link: "https://www.linkedin.com/in/elin-lee-a44859208/", 
+    bio: "I like doggies" 
+  },
+  { 
+    imageSrc: JustinThe, 
+    name: "Justin The", 
+    description: "Elec Co-Lead", 
+    link: "https://www.linkedin.com/in/justinthe/", 
+    bio: "I like fish" 
+  },
+  { 
+    imageSrc: ArpitKumar, 
+    name: "Arpit Kumar", 
+    description: "Elec Embedded Team", 
+    link: "http://kumarpit.github.io/", 
+    bio: "I like Rust" 
+  },
+  { 
+    imageSrc: GhazalFallahpour, 
+    name: "Ghazal Fallahpour", 
+    description: "Elec Embedded Team", 
+    link: "https://ca.linkedin.com/in/ghazal-fallahpour-67990918a", 
+    bio: "I like coffee" 
+  },
 ];
 
 // Mechanical
 import TerrenceLeong from "../assets/headshots/Terrence Leong.jpg";
-import AliHawkins from "../assets/headshots/Ali Hawkins.jpg";
+// import AliHawkins from "../assets/headshots/Ali Hawkins.jpg";
 import JackieChen from "../assets/headshots/Jackie Chen.jpg";
-import JedidahChiusa from "../assets/headshots/Jedidiah Chiusa.jpg";
-import WillemBarnard from "../assets/headshots/Willem Barnard.jpg";
-import JoyceWu from "../assets/headshots/Joyce Wu.jpg";
+// import JedidahChiusa from "../assets/headshots/Jedidiah Chiusa.jpg";
+// import WillemBarnard from "../assets/headshots/Willem Barnard.jpg";
+// import JoyceWu from "../assets/headshots/Joyce Wu.jpg";
 import MarvinTing from "../assets/headshots/Marvin Ting.jpg";
-import NataliaNayyar from "../assets/headshots/Natalia Nayyar.jpg";
-import AyaulymBerkinbateva from "../assets/headshots/Ayaulym Berkinbayeva.jpg";
+// import NataliaNayyar from "../assets/headshots/Natalia Nayyar.jpg";
+// import AyaulymBerkinbateva from "../assets/headshots/Ayaulym Berkinbayeva.jpg";
 
 const Mechanical = [
-  { imageSrc: JedidahChiusa, name: "Jedidah Chiusa", description: "Mechanical Co-Lead" },
-  { imageSrc: MarvinTing, name: "Marvin Ting", description: "Mechanical Co-Lead" },
-  { imageSrc: TerrenceLeong, name: "Terrence Leong", description: "" },
-  { imageSrc: AliHawkins, name: "Ali Hawkins", description: "" },
-  { imageSrc: JackieChen, name: "Jackie Chen", description: "" },
-  { imageSrc: WillemBarnard, name: "Willem Barnard", description: "" },
-  { imageSrc: JoyceWu, name: "Joyce Wu", description: "" },
-  { imageSrc: NataliaNayyar, name: "Natalia Nayyar", description: "" },
-  { imageSrc: AyaulymBerkinbateva, name: "Ayaulym Berkinbayeva", description: "" },
+  { 
+    imageSrc: TerrenceLeong, 
+    name: "Terrence Leong", 
+    description: "Mech", 
+    link: "", 
+    bio: "" 
+  },
+  { 
+    imageSrc: MarvinTing, 
+    name: "Marvin Ting", 
+    description: "Mech Co-Lead", 
+    link: "http://linkedin.com/in/marvinting", 
+    bio: "" 
+  },
+  { 
+    imageSrc: BLANK_PICTURE, 
+    name: "Kiwi Chen", 
+    description: "Mech", 
+    link: "https://www.linkedin.com/in/kiwichen", 
+    bio: "I like Gundam and volleyball" 
+  },
+  { 
+    imageSrc: BLANK_PICTURE, 
+    name: "Kaylie Chen", 
+    description: "Mech", 
+    link: "https://www.linkedin.com/in/kayliecjy", 
+    bio: "I am a matcha latte enthusiast" 
+  },
+  { 
+    imageSrc: JackieChen, 
+    name: "Jackie Chen", 
+    description: "Mech", 
+    link: "https://www.linkedin.com/in/jackielchen", 
+    bio: "I like cars" 
+  }
 ];
 
 // Advisors
@@ -144,6 +189,8 @@ const Teams = () => {
               imageSrc={member.imageSrc}
               name={member.name}
               description={member.description}
+              link={member.link}
+              bio={member.bio}
             />
           ))}
         </div>
@@ -164,6 +211,8 @@ const Teams = () => {
               imageSrc={member.imageSrc}
               name={member.name}
               description={member.description}
+              link={member.link}
+              bio={member.bio}
             />
           ))}
         </div>
@@ -184,6 +233,8 @@ const Teams = () => {
               imageSrc={member.imageSrc}
               name={member.name}
               description={member.description}
+              link={member.link}
+              bio={member.bio}
             />
           ))}
         </div>
@@ -204,6 +255,8 @@ const Teams = () => {
               imageSrc={member.imageSrc}
               name={member.name}
               description={member.description}
+              link={member.link}
+              bio={member.bio}
             />
           ))}
         </div>
@@ -218,12 +271,14 @@ const Teams = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-24 place-items-center">
-          {Mechanical.map((member, index) => (
+        {Mechanical.map((member, index) => (
             <Member
               key={index}
               imageSrc={member.imageSrc}
               name={member.name}
               description={member.description}
+              link={member.link}
+              bio={member.bio}
             />
           ))}
         </div>
