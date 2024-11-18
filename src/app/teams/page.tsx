@@ -44,7 +44,7 @@ const Analytics = [
   { imageSrc: BLANK_PICTURE, name: "Raihan Arvi", description: "Co-Lead" },
   { imageSrc: LeticiaCid, name: "Leticia Cid", description: "", link: "https://www.linkedin.com/in/leticia-cid/", bio: "I like brains and computers (and puffins)" },
   { imageSrc: IrisXu, name: "Iris Xu", description: "" },
-  { imageSrc: KhueDo, name: "Khue Do", description: "I've never been to a wedding", link: "https://www.linkedin.com/in/khue-do-28ab0b242" },
+  { imageSrc: KhueDo, name: "Khue Do", link: "https://www.linkedin.com/in/khue-do-28ab0b242", bio: "I've never been to a wedding" },
   { imageSrc: BLANK_PICTURE, name: "Luca Jones", description: "" },
 ];
 
