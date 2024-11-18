@@ -50,7 +50,7 @@ const Member: React.FC<MemberProps> = ({ imageSrc, name, description, link, bio 
       
       {/* Name, description, bio */}
       {showBio && bio ? (
-        <p className="text-md text-secondary">"{bio}"</p>
+        <p className="text-md text-secondary">&quot;{bio}&quot;</p>
       ) : (
         <>
           <h2 className="text-md md:text-lg font-semibold">{name}</h2>
