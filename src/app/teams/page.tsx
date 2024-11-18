@@ -9,42 +9,51 @@ import BLANK_PICTURE from "../assets/headshots/blank.jpg";
 // Captains
 import JoyceXi from "../assets/headshots/Joyce Xi.jpg";
 // import KyleKochi from "../assets/headshots/Kyle Kochi.jpg";
+import NataliaNayyar from "../assets/headshots/Natalia Nayyar.jpg";
 
 const Captains = [
   { imageSrc: JoyceXi, name: "Joyce Xi", description: "Captain", link: "https://www.linkedin.com/in/joycexi/", bio: "I like birds" },
+  { imageSrc: NataliaNayyar, name: "Natalia Nayyar", description: "Vice Captain", link: "https://www.linkedin.com/in/natalia-nayyar/" }
 ];
 
 // Admin
-// import MelanieCheng from "../assets/headshots/Melanie Cheng.jpg";
 // import BrandonAhYou from "../assets/headshots/Brandon Ah You.jpg";
-// import SashaSabourin from "../assets/headshots/Sasha Sabourin.jpg";
+import SashaSabourin from "../assets/headshots/Sasha Sabourin.jpg";
+import MelanieCheng from "../assets/headshots/Melanie Cheng.jpg";
 import KimTan from "../assets/headshots/Kim Tan.jpg";
 
 const Admin = [
+  { imageSrc: MelanieCheng, name: "Melanie Cheng", description: "Co-Lead", },
+  { imageSrc: SashaSabourin, name: "Sasha Sabourin", description: "Co-Lead", },
   { imageSrc: BLANK_PICTURE, name: "Faraz Tehrani", description: "Web Developer", bio: "Hello! I'm currently managing this site :)" },
-  { imageSrc: KimTan, name: "Kim Tan", description: "", link: "https://www.linkedin.com/in/kim-tan-447715202", bio: "I have a golden retriver named Diesel...but he lives at home in Texas :(" },
+  { imageSrc: BLANK_PICTURE, name: "Joshua Wong", description: "Financial Officer", link: "www.linkedin.com/in/joshuaw9/" },
+  { imageSrc: KimTan, name: "Kim Tan", link: "https://www.linkedin.com/in/kim-tan-447715202", bio: "I have a golden retriver named Diesel...but he lives at home in Texas :(" },
   { imageSrc: BLANK_PICTURE, name: "Sofya Fefelova", description: "Social Media Coordinator", bio: "I have a corgi named Maily" },
-  { imageSrc: BLANK_PICTURE, name: "Kruti Raval", description: "" },
+  { imageSrc: BLANK_PICTURE, name: "Kruti Raval", },
 ];
 
 // Analytics
 import RachaelMacdougall from "../assets/headshots/Rachel MacDougall.jpg";
 // import BuyangDaffa from "../assets/headshots/Buyang Daffa.jpg";
-// import IrisXu from "../assets/headshots/Iris Xu.png";
-// import KhueDo from "../assets/headshots/Khue Do.jpg";
+import IrisXu from "../assets/headshots/Iris Xu.png";
+import KhueDo from "../assets/headshots/Khue Do.jpg";
 import LeticiaCid from "../assets/headshots/Leticia Cid.jpg";
 
 const Analytics = [
-  { imageSrc: LeticiaCid, name: "Leticia Cid", description: "Co-Lead", link: "https://www.linkedin.com/in/leticia-cid/", bio: "I like brains and computers (and puffins)" },
-  { imageSrc: RachaelMacdougall, name: "Rachel MacDougall", description: "Co-Lead", link: "https://www.linkedin.com/in/rachel-macdougall" }
+  { imageSrc: RachaelMacdougall, name: "Rachel MacDougall", description: "Co-Lead", link: "https://www.linkedin.com/in/rachel-macdougall" },
+  { imageSrc: BLANK_PICTURE, name: "Raihan Arvi", description: "Co-Lead" },
+  { imageSrc: LeticiaCid, name: "Leticia Cid", description: "", link: "https://www.linkedin.com/in/leticia-cid/", bio: "I like brains and computers (and puffins)" },
+  { imageSrc: IrisXu, name: "Iris Xu", description: "" },
+  { imageSrc: KhueDo, name: "Khue Do", description: "I've never been to a wedding", link: "https://www.linkedin.com/in/khue-do-28ab0b242" },
+  { imageSrc: BLANK_PICTURE, name: "Luca Jones", description: "" },
 ];
 
 // Electrical
-// import AnthonyStewart from "../assets/headshots/Anthony Stewart.jpg";
+import AnthonyStewart from "../assets/headshots/Anthony Stewart.jpg";
 import JustinThe from "../assets/headshots/Justin The.jpg";
 // import NickSantoso from "../assets/headshots/Nick Santoso.jpg";
 // import TeelaMoore from "../assets/headshots/Teela Moore.jpg";
-// import RykerSchroeder from "../assets/headshots/Ryker Schroeder.jpg";
+import RykerSchroeder from "../assets/headshots/Ryker Schroeder.jpg";
 // import MichaelRoss from "../assets/headshots/Michael Ross.jpg";
 import ChathilRajamanthree from "../assets/headshots/Chathil Rajamanthree.jpg";
 import GhazalFallahpour from "../assets/headshots/Ghazal Fallahpour.jpg";
@@ -55,96 +64,133 @@ import ArpitKumar from "../assets/headshots/Arpit Kumar.jpg";
 // import WilliamJi from "../assets/headshots/William Ji.jpg";
 
 const Electrical = [
+  {
+    imageSrc: BLANK_PICTURE,
+    name: "Nicholas Santoso",
+    description: "Co-Lead"
+  },
+  { 
+    imageSrc: JustinThe, 
+    name: "Justin The", 
+    description: "Co-Lead", 
+    link: "https://www.linkedin.com/in/justinthe/", 
+    bio: "I like fish" 
+  },
   { 
     imageSrc: ChathilRajamanthree, 
     name: "Chathil Rajamanthree", 
-    description: "Elec", 
     link: "https://www.linkedin.com/in/chathilrajaman3/", 
     bio: "I like electrons" 
   },
   { 
     imageSrc: BLANK_PICTURE, 
     name: "Alvin Shon", 
-    description: "Elec", 
     link: "https://www.linkedin.com/in/alvinshon7567", 
     bio: "I like bunnies" 
   },
   { 
     imageSrc: BLANK_PICTURE, 
     name: "Elin Lee", 
-    description: "Elec", 
     link: "https://www.linkedin.com/in/elin-lee-a44859208/", 
     bio: "I like doggies" 
   },
   { 
-    imageSrc: JustinThe, 
-    name: "Justin The", 
-    description: "Elec Co-Lead", 
-    link: "https://www.linkedin.com/in/justinthe/", 
-    bio: "I like fish" 
-  },
-  { 
     imageSrc: ArpitKumar, 
     name: "Arpit Kumar", 
-    description: "Elec Embedded Team", 
+    description: "Embedded Team", 
     link: "http://kumarpit.github.io/", 
     bio: "I like Rust" 
   },
   { 
     imageSrc: GhazalFallahpour, 
     name: "Ghazal Fallahpour", 
-    description: "Elec Embedded Team", 
+    description: "Embedded Team", 
     link: "https://ca.linkedin.com/in/ghazal-fallahpour-67990918a", 
     bio: "I like coffee" 
+  },
+  { 
+    imageSrc: AnthonyStewart, 
+    name: "Anthony Stewart", 
+  },
+  { 
+    imageSrc: BLANK_PICTURE, 
+    name: "Krisha Iquin", 
+    description: "Embedded Team",
+  },
+  { 
+    imageSrc: BLANK_PICTURE, 
+    name: "Andreas Mendez-Cadrin", 
+  },
+  { 
+    imageSrc: BLANK_PICTURE, 
+    name: "Sofia Valoria", 
+  },
+  { 
+    imageSrc: BLANK_PICTURE, 
+    name: "Aditya Bansal", 
+  },
+  { 
+    imageSrc: RykerSchroeder, 
+    name: "Ryker Schroeder", 
   },
 ];
 
 // Mechanical
 import TerrenceLeong from "../assets/headshots/Terrence Leong.jpg";
-// import AliHawkins from "../assets/headshots/Ali Hawkins.jpg";
+import AliHawkins from "../assets/headshots/Ali Hawkins.jpg";
 import JackieChen from "../assets/headshots/Jackie Chen.jpg";
-// import JedidahChiusa from "../assets/headshots/Jedidiah Chiusa.jpg";
-// import WillemBarnard from "../assets/headshots/Willem Barnard.jpg";
+import JedidahChiusa from "../assets/headshots/Jedidiah Chiusa.jpg";
+import WillemBarnard from "../assets/headshots/Willem Barnard.jpg";
 // import JoyceWu from "../assets/headshots/Joyce Wu.jpg";
 import MarvinTing from "../assets/headshots/Marvin Ting.jpg";
-// import NataliaNayyar from "../assets/headshots/Natalia Nayyar.jpg";
 // import AyaulymBerkinbateva from "../assets/headshots/Ayaulym Berkinbayeva.jpg";
 
 const Mechanical = [
   { 
+    imageSrc: JackieChen, 
+    name: "Jackie Chen", 
+    description: "Co-Lead",
+    link: "https://www.linkedin.com/in/jackielchen", 
+    bio: "I like cars" 
+  },
+  { 
     imageSrc: TerrenceLeong, 
     name: "Terrence Leong", 
-    description: "Mech", 
+    description: "Co-Lead",
     link: "", 
     bio: "" 
   },
   { 
     imageSrc: MarvinTing, 
     name: "Marvin Ting", 
-    description: "Mech Co-Lead", 
+    description: "Advisor", 
     link: "http://linkedin.com/in/marvinting", 
     bio: "" 
+  },
+  {
+    imageSrc: JedidahChiusa, 
+    name: "Jedidah Chiusa", 
+    description: "Advisor", 
   },
   { 
     imageSrc: BLANK_PICTURE, 
     name: "Kiwi Chen", 
-    description: "Mech", 
     link: "https://www.linkedin.com/in/kiwichen", 
     bio: "I like Gundam and volleyball" 
   },
   { 
     imageSrc: BLANK_PICTURE, 
     name: "Kaylie Chen", 
-    description: "Mech", 
     link: "https://www.linkedin.com/in/kayliecjy", 
     bio: "I am a matcha latte enthusiast" 
   },
-  { 
-    imageSrc: JackieChen, 
-    name: "Jackie Chen", 
-    description: "Mech", 
-    link: "https://www.linkedin.com/in/jackielchen", 
-    bio: "I like cars" 
+  {
+    imageSrc: WillemBarnard,
+    name: "Will Barnard",
+  },
+  {
+    imageSrc: AliHawkins,
+    name: "Ali Hawkins",
   }
 ];
 
@@ -158,8 +204,8 @@ import XiaoliangJin from "../assets/headshots/Xiaoliang Jin.jpg";
 const Advisors = [
   { imageSrc: EmilyFlaschner, name: "Emily Flaschner", description: "Undergraduate Advisor (SBME)" },
   { imageSrc: ManuMadhav, name: "Manu Madhav", description: "Faculty Advisor (SBME)" },
-  { imageSrc: JohnMadden, name: "John Madden", description: "Graduate Advisor (SBME)" },
-  { imageSrc: FraserDouglas, name: "Fraser Douglas", description: "Faculty Advisor (ECE)" },
+  { imageSrc: JohnMadden, name: "John Madden", description: "Faculty Advisor (ECE)" },
+  { imageSrc: FraserDouglas, name: "Fraser Douglas", description: "Graduate Advisor (SBME)" },
   { imageSrc: XiaoliangJin, name: "Xiaoliang Jin", description: "Faculty Advisor (MECH)" },
 ];
 
@@ -182,7 +228,7 @@ const Teams = () => {
 
       {/* Captains Section */}
       <section className="w-full max-w-5xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-24 place-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-24 place-items-center">
           {Captains.map((member, index) => (
             <Member
               key={index}

@@ -19,7 +19,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "UBC Bionics",
-  description: "We're an undergraduate engineering design team at the University of British Columbia in Vancouver, focused on the advancement of bionics.",
+  description: "At UBC Bionics, we combine passion and innovation to reinvent the world of prosthesis through bionic engineering.",
 };
 
 export default function RootLayout({
