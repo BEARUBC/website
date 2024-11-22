@@ -14,8 +14,8 @@ const Member: React.FC<MemberProps> = ({ imageSrc, name, description, link, bio 
   const [showBio, setShowBio] = useState(false);
 
   return (
-    <div className="flex flex-col items-start text-left w-36 h-48 md:w-48 md:h-72 relative">
-      <div className="w-36 h-36 md:w-48 md:h-48 relative mb-2 rounded-2xl overflow-hidden">
+    <div className="flex flex-col items-start text-left w-52 h-80 relative">
+      <div className="w-52 h-52 relative mb-2 rounded-2xl overflow-hidden">
         <Image
           src={imageSrc}
           alt={`${name}'s profile picture`}

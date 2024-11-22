@@ -25,7 +25,7 @@ import KimTan from "../assets/headshots/Kim Tan.jpg";
 const Admin = [
   { imageSrc: MelanieCheng, name: "Melanie Cheng", description: "Co-Lead", },
   { imageSrc: SashaSabourin, name: "Sasha Sabourin", description: "Co-Lead", },
-  { imageSrc: BLANK_PICTURE, name: "Faraz Tehrani", description: "Web Developer", bio: "Hello! I'm currently managing this site :)" },
+  { imageSrc: BLANK_PICTURE, name: "Faraz Tehrani", description: "Developer", bio: "Hello! I'm currently building this site :)" },
   { imageSrc: BLANK_PICTURE, name: "Joshua Wong", description: "Financial Officer", link: "www.linkedin.com/in/joshuaw9/" },
   { imageSrc: KimTan, name: "Kim Tan", link: "https://www.linkedin.com/in/kim-tan-447715202", bio: "I have a golden retriver named Diesel...but he lives at home in Texas :(" },
   { imageSrc: BLANK_PICTURE, name: "Sofya Fefelova", description: "Social Media Coordinator", bio: "I have a corgi named Maily" },
