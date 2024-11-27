@@ -31,13 +31,12 @@ import ArpitKumar from "../assets/headshots/Arpit Kumar.jpg";
 
 // -- Mechanical --
 import TerrenceLeong from "../assets/headshots/Terrence Leong.jpg";
-import AliHawkins from "../assets/headshots/Ali Hawkins.jpg";
 import JackieChen from "../assets/headshots/Jackie Chen.jpg";
 import JedidahChiusa from "../assets/headshots/Jedidiah Chiusa.jpg";
 import WillemBarnard from "../assets/headshots/Willem Barnard.jpg";
 import MarvinTing from "../assets/headshots/Marvin Ting.jpg";
 
-// -- Advisors
+// -- Advisors --
 import EmilyFlaschner from "../assets/headshots/Emily Flaschner.jpg";
 import ManuMadhav from "../assets/headshots/Manu Madhav.jpg";
 import JohnMadden from "../assets/headshots/John Madden.jpg";
@@ -92,7 +91,6 @@ const Mechanical = [
   { imageSrc: BLANK_PICTURE, name: "Kiwi Chen", link: "https://www.linkedin.com/in/kiwichen", bio: "I like Gundam and volleyball" },
   { imageSrc: BLANK_PICTURE, name: "Kaylie Chen", link: "https://www.linkedin.com/in/kayliecjy", bio: "I am a matcha latte enthusiast" },
   { imageSrc: WillemBarnard,name: "Will Barnard", },
-  { imageSrc: AliHawkins, name: "Ali Hawkins", }
 ];
 
 const Advisors = [
@@ -106,7 +104,7 @@ const Advisors = [
 const Teams = () => {
   return (
     <main className="relative flex flex-col items-center justify-center space-y-8">
-      {/* Full-page section */}
+      {/* Full-page Section */}
       <section className="relative w-full h-screen">
         <Image 
           src={TeamPhoto} 

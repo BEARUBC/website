@@ -13,6 +13,7 @@ import teamphoto from "./assets/team-photo.png";
 import holdmug from "./assets/hold-mug.png";
 import bionicarm from "./assets/bionic-arm.png";
 import { FiChevronDown } from "react-icons/fi";
+import cybathlon2024 from "./assets/cybathlon2024.png";
 
 // Components
 import Scroller from "./components/Scroller";
@@ -32,10 +33,6 @@ const FAQ = [
   {
     question: "What sub-team should I apply for?",
     answer: "The final choice that you list on your application is up to you! All we ask is that you have an idea of which sub-team(s) aligns best with your own interests or studies, to better help us decide what the best fit is for you.",
-  },
-  {
-    question: "How do I join the research team?",
-    answer: "The research team is a new addition to our team as a whole, and requires membership on one of our sub-teams to be eligible for consideration. Recommendation from your sub-team lead is also required to apply for a position on the research team. All applications will be reviewed by the executive team and the professor/graduate student in charge.",
   },
 ];
 
@@ -136,22 +133,20 @@ const Home = () => {
 
       {/* Current Events */}
       <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center">
-        <p className="text-xs text-secondary tracking-widest">CURRENT EVENTS</p>
-        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Cybathlon 2024</h2>
+        <p className="text-xs text-secondary tracking-widest">2024-2025</p>
+        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">
+        Current Events
+        </h2>
 
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-        We are currently all-hands-on-deck for CYBATHLON 2024! 
+        Moving forward from the CYBATHLON 2024 season, we are continuing to iterate on our current projects, GRASP and NERV. Our teams have been hard at work, so stay tuned for updates!
         </p>
-        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-        Our team is building GRASP, a trans-radial smart bionic arm designed to improve the daily life of amputees.
 
-        In late October, we&apos;ll be submitting GRASP to the Arm Prosthesis Race, one of the eight different discipline categories in the competition. Bionics will be meeting locally for the CYBATHLON between the 24th and the 26th in the Osborne Center, where University of Alberta&apos;s team BLINC will be competing as well.
-        </p>
+        {/* Image same width as text */}
+        <Image src={cybathlon2024} alt="CYBATHLON 2024" width={1000} height={1000} className="w-full md:w-5/6 p-4" />
+
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-        Click <a href="/projects" className="text-blue-600 dark:text-blue-500 hover:underline">here</a> for more info on GRASP!
-        </p>
-        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-        We also recently announced the addition of a brand new research team to UBC Bionics. This research team will collaborate on a collection of smaller group projects with UBC professors and graduate students, that will help members develop skills to aid to the advancement of our current project, GRASP.
+        Click <a href="/projects" className="text-blue-600 dark:text-blue-500 hover:underline">here</a> for more info on our current projects!
         </p>
       </section>
 

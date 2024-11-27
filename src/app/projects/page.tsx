@@ -1,3 +1,8 @@
+import Image from "next/image";
+
+import grasp from "../assets/projects/grasp.png";
+import nerv from "../assets/projects/nerv.png";
+
 const Projects = () => {
     return (
         <main className="relative flex flex-col items-center justify-center">
@@ -6,6 +11,15 @@ const Projects = () => {
             <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center">
                 <p className="text-xs text-secondary tracking-widest">1 / 2</p>
                 <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">GRASP</h2>
+
+                <div className="w-full md:w-5/6 mb-8">
+                    <Image
+                        src={grasp}
+                        alt="GRASP Project"
+                        className="w-full h-auto rounded-lg shadow-lg"
+                        priority
+                    />
+                </div>
 
                 <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
                 GRASP is our pilot project, a smart prosthetic arm integrating electromyography, computer vision, and 3D printing techniques, designed for a trans-radial forearm amputee!
@@ -32,12 +46,31 @@ const Projects = () => {
                 <p className="text-xs text-secondary tracking-widest">2 / 2</p>
                 <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">NERV</h2>
 
+                <div className="w-full md:w-5/6 mb-8">
+                    <Image
+                        src={nerv}
+                        alt="NERV Project"
+                        className="w-full h-auto rounded-lg shadow-lg"
+                        priority
+                    />
+                </div>
+
                 <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-                NERV is our current design of a brain-computer interface (BCI) aiming to process EEG signals to autonomously control an output device, such as a video game, for individuals paralyzed from the neck below.
+                NERV is our current design of a brain-computer interface (BCI) aiming to process EEG signals to autonomously control an output device, for individuals paralyzed from the neck below.
                 </p>
                 <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-                More information on NERV will be available soon!
+                We are aiming to build a non-invasive BCI targeting pilots with significant motor impairments, particularly those with spinal cord injuries at the C5 level or above, having little to no motor function from the neck down.
                 </p>
+                <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
+                Our current design is focusing on completing tasks associated with ETH Zurich&apos;s Cybathlon 2024 requirements, including:
+                </p>
+                <ul className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6 list-disc list-inside">
+                    <li>Navigating through furniture and obstacles</li>
+                    <li>Catching ice cubes in a cup</li>
+                    <li>Controlling a computer cursor and clicks</li>
+                    <li>Operating a key and lock mechanism</li>
+                    <li>Avoiding moving vacuum cleaners</li>
+                </ul>
             </section>
 
         </main>
