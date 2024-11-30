@@ -68,7 +68,7 @@ const Analytics = [
 ];
 
 const Electrical = [
-  { imageSrc: NickSantoso, name: "Nicholas Santoso", description: "Co-Lead" },
+  { imageSrc: NickSantoso, name: "Nicholas Santoso", description: "Co-Lead", link: "https://www.linkedin.com/in/nicholas-c-santoso/", bio: "I can squat more than I can deadlift" },
   { imageSrc: JustinThe, name: "Justin The", description: "Co-Lead", link: "https://www.linkedin.com/in/justinthe/", bio: "I like fish" },
   { imageSrc: ChathilRajamanthree, name: "Chathil Rajamanthree", link: "https://www.linkedin.com/in/chathilrajaman3/", bio: "I like electrons" },
   { imageSrc: BLANK_PICTURE, name: "Alvin Shon", link: "https://www.linkedin.com/in/alvinshon7567", bio: "I like bunnies" },
@@ -76,7 +76,7 @@ const Electrical = [
   { imageSrc: ArpitKumar, name: "Arpit Kumar", description: "Embedded Team", link: "http://kumarpit.github.io/", bio: "I like Rust" },
   { imageSrc: GhazalFallahpour, name: "Ghazal Fallahpour", description: "Embedded Team", link: "https://ca.linkedin.com/in/ghazal-fallahpour-67990918a", bio: "I like coffee" },
   { imageSrc: AnthonyStewart, name: "Anthony Stewart", },
-  { imageSrc: BLANK_PICTURE, name: "Krisha Iquin", description: "Embedded Team",},
+  { imageSrc: BLANK_PICTURE, name: "Krisha Iquin", description: "Embedded Team", link: "https://www.linkedin.com/in/krishaiquin/", bio: "I like cool tech and I cannot lie, with microchips making my spirits fly high!" },
   { imageSrc: BLANK_PICTURE, name: "Andreas Mendez-Cadrin", },
   { imageSrc: BLANK_PICTURE, name: "Sofia Valoria", },
   { imageSrc: BLANK_PICTURE, name: "Aditya Bansal", },
