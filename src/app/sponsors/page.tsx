@@ -55,46 +55,60 @@ const Sponsors = () => {
         <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Our Sponsors</h2>
       </section>
 
-      {/* Gold tier */}
-      <h2 className="text-xl md:text-2xl tracking-tight pt-16">GOLD TIER</h2>
-      <hr className="w-5/6 border-1 pb-4" />
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Gold Tier */}
+        <div className="mb-20">
+          <div className="flex items-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-yellow-500">GOLD TIER</h2>
+            <div className="flex-grow ml-4 h-0.5 bg-gradient-to-r from-yellow-500 to-transparent"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 items-center justify-items-center">
+            <Image src={bionicsnetwork} alt="Bionics Network" height={100} className="hover:scale-105 transition-transform duration-300" />
+            <Image src={sbmeubc} alt="SBME UBC" height={100} className="hover:scale-105 transition-transform duration-300" />
+            <Image src={ece} alt="ECE" height={100} className="hover:scale-105 transition-transform duration-300" />
+            <Image src={ubcapplied} alt="Applied Science" height={100} className="hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-24 mb-4">
-        <Image src={bionicsnetwork} alt="Bionics Network" height={100} />
-        <Image src={sbmeubc} alt="SBME UBC" height={100} />
-        <Image src={ece} alt="ECE" height={100} />
-        <Image src={ubcapplied} alt="Applied Science" height={100} />
-      </div>
+        {/* Silver Tier */}
+        <div className="mb-20">
+          <div className="flex items-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-700">SILVER TIER</h2>
+            <div className="flex-grow ml-4 h-0.5 bg-gradient-to-r from-gray-700 to-transparent"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-items-center">
+            <Image src={starfish} alt="Starfish Medical" height={100} className="hover:scale-105 transition-transform duration-300" />
+            <Image src={egbc} alt="EGBC" height={100} className="hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
 
-      {/* Silver tier */}
-      <h2 className="text-xl md:text-2xl tracking-tight pt-16">SILVER TIER</h2>
-      <hr className="w-5/6 border-1 pb-4" />
+        {/* Bronze Tier */}
+        <div className="mb-20">
+          <div className="flex items-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#CD7F32]">BRONZE TIER</h2>
+            <div className="flex-grow ml-4 h-0.5 bg-gradient-to-r from-[#CD7F32] to-transparent"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center">
+            <Image src={mecheng} alt="Mechanical Engineering" height={100} className="hover:scale-105 transition-transform duration-300" />
+            <Image src={ubcmaterials} alt="Materials Engineering" height={100} className="hover:scale-105 transition-transform duration-300" />
+            <Image src={ieee} alt="IEEE" height={100} className="hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-24 mb-4">
-        <Image src={starfish} alt="Starfish Medical" height={100} />
-        <Image src={egbc} alt="EGBC" height={100} />
-      </div>
-
-      {/* Bronze tier */}
-      <h2 className="text-xl md:text-2xl tracking-tight pt-16">BRONZE TIER</h2>
-      <hr className="w-5/6 border-1 pb-4" />
-
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-24 mb-4">
-        <Image src={mecheng} alt="Mechanical Engineering" height={100} />
-        <Image src={ubcmaterials} alt="Materials Engineering" height={100} />
-        <Image src={ieee} alt="IEEE" height={100} />
-      </div>
-
-      {/* Supporting Organizations */}
-      <h2 className="text-xl md:text-2xl tracking-tight pt-16">SUPPORTING ORGANIZATIONS</h2>
-      <hr className="w-5/6 border-1 pb-4" />
-
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-24 mb-4">
-        <Image src={asee} alt="ASEE" height={100} />
-        <Image src={digikey} alt="Digikey" height={100} />
-        <Image src={pololu} alt="Pololu" height={100} />
-        <Image src={eus} alt="EUS" height={100} />
-      </div>
+        {/* Supporting Organizations */}
+        <div className="mb-20">
+          <div className="flex items-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-secondary">SUPPORTING ORGANIZATIONS</h2>
+            <div className="flex-grow ml-4 h-0.5 bg-gradient-to-r from-secondary to-transparent"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 items-center justify-items-center">
+            <Image src={asee} alt="ASEE" height={100} className="hover:scale-105 transition-transform duration-300" />
+            <Image src={digikey} alt="Digikey" height={100} className="hover:scale-105 transition-transform duration-300" />
+            <Image src={pololu} alt="Pololu" height={100} className="hover:scale-105 transition-transform duration-300" />
+            <Image src={eus} alt="EUS" height={100} className="hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </section>
 
       {/* Image carousel */}
       <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center">
