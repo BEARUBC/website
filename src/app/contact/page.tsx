@@ -50,7 +50,7 @@ const Contact = () => {
                 <p className="text-xs text-secondary tracking-widest">CONTACT US</p>
                 <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Any Questions?</h2>
                 <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-                    Don&apos;t hesitate to reach out to us directly! Our team will get back to you as soon as possible. Please email us at ubcbionicsteam@gmail.com for urgent inquiries, or if you don't hear back within a few days.
+                    Don&apos;t hesitate to reach out to us directly! Our team will get back to you as soon as possible. Please email us at ubcbionicsteam@gmail.com for urgent inquiries, or if you don&apos;t hear back within a few days.
                 </p>
             </section>
 
