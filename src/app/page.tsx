@@ -172,13 +172,17 @@ const Home = () => {
         <p className="text-xs text-secondary tracking-widest">JOIN US</p>
         <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Get Involved</h2>
 
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6 bg-lime-100">
+          Recruitment is currently open! <a href="https://forms.gle/No4hqRNafP5VMf2R9" className="text-blue-600 dark:text-blue-500 hover:underline" target="_blank">Apply here.</a>
+        </p>
+
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-          UBC Bionics is always looking for passionate and dedicated students to join our team. If you are interested in bionics, robotics, or engineering, we would love to have you on board! 
+          UBC Bionics is always looking for passionate and dedicated students to join our team. If you are interested in bionics, robotics, or engineering, we would love to have you on board!
         </p>
 
         {/* FAQ */}
         <Accordion items={FAQ} />
-      </section>
+            </section>
 
     </main>
   );

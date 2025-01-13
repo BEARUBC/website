@@ -19,7 +19,16 @@ const Contact = () => {
         setSuccess(false);
         setError('');
 
-        emailjs.send('service_1y3jnta', 'template_kukurtj', { name, email, message }, 'IosrT7wWfMddF8_7S')
+        emailjs.send(
+            'service_lnzgalg', 
+            'template_exboetd', 
+            {
+                from_name: name,
+                user_email: email,
+                message: message,
+            }, 
+            'pspAjmXYiG5FH5XFz'
+        )
             .then(() => {
                 setSuccess(true);
                 setName('');
@@ -41,7 +50,7 @@ const Contact = () => {
                 <p className="text-xs text-secondary tracking-widest">CONTACT US</p>
                 <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Any Questions?</h2>
                 <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-                    Don&apos;t hesitate to reach out to us directly! Our team will get back to you as soon as possible. Please email us at ubcbionicsteam@gmail.com for urgent inquiries.
+                    Don&apos;t hesitate to reach out to us directly! Our team will get back to you as soon as possible. Please email us at ubcbionicsteam@gmail.com for urgent inquiries, or if you don't hear back within a few days.
                 </p>
             </section>
 
@@ -55,7 +64,7 @@ const Contact = () => {
                         className="w-full p-2 mb-4 border border-primary rounded-md bg-neutral-100" 
                         required 
                     />
-                    <p className="text-sm">Your email address <span className="text-xs font-light">(So we can get back to you!)</span></p>
+                    <p className="text-sm">Your email address <span className="text-xs font-light">(We need this so we can get back to you!)</span></p>
                     <input 
                         type="email" 
                         value={email} 
