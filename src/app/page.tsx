@@ -172,8 +172,8 @@ const Home = () => {
         <p className="text-xs text-secondary tracking-widest">JOIN US</p>
         <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Get Involved</h2>
 
-        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6 bg-lime-100">
-          Recruitment is currently open! <a href="https://forms.gle/No4hqRNafP5VMf2R9" className="text-blue-600 dark:text-blue-500 hover:underline" target="_blank">Apply here.</a>
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6 bg-lime-100 text-center">
+          Recruitment is currently open! We have open positions on our <b>analytics</b> and <b>mechanical</b> subteams. <a href="https://forms.gle/No4hqRNafP5VMf2R9" className="text-blue-600 dark:text-blue-500 hover:underline" target="_blank">Apply here</a> before January 24th!
         </p>
 
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
