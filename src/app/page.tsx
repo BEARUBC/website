@@ -131,23 +131,22 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Current Events */}
+      {/* Join Us */}
       <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center">
-        <p className="text-xs text-secondary tracking-widest">2024-2025</p>
-        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">
-        Current Events
-        </h2>
+        <p className="text-xs text-secondary tracking-widest">JOIN US</p>
+        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Get Involved</h2>
 
-        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-        Moving forward from the CYBATHLON 2024 season, we are continuing to iterate on our current projects, GRASP and NERV. Our teams have been hard at work, so stay tuned for updates!
+        {/* alternate text: */}
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6 bg-green-100 text-center">
+          We have open positions on our <b>admin</b>, <b>analytics</b>, <b>electrical</b>, and <b>mechanical</b> subteams. <br></br><a href="https://forms.gle/XYkecWbURjJAmECx5" className="text-blue-600 dark:text-blue-500 hover:underline" target="_blank">Apply here</a> before September 14th! (Midnight PST)
         </p>
 
-        {/* Image same width as text */}
-        <Image src={cybathlon2024} alt="CYBATHLON 2024" width={1000} height={1000} className="w-full md:w-5/6 p-4" />
-
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-        Click <a href="/projects" className="text-blue-600 dark:text-blue-500 hover:underline">here</a> for more info on our current projects!
+          UBC Bionics is always looking for passionate and dedicated students to join our team. If you are interested in bionics, robotics, or engineering, we would love to have you on board!
         </p>
+
+        {/* FAQ */}
+        <Accordion items={FAQ} />
       </section>
 
       {/* Scroller of sponsors */}
@@ -167,24 +166,24 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Join Us */}
+      {/* Current Events */}
       <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center">
-        <p className="text-xs text-secondary tracking-widest">JOIN US</p>
-        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Get Involved</h2>
-
-        {/* alternate text: */}
-        {/* We have open positions on our <b>analytics</b> and <b>mechanical</b> subteams. <a href="https://forms.gle/No4hqRNafP5VMf2R9" className="text-blue-600 dark:text-blue-500 hover:underline" target="_blank">Apply here</a> before January 24th! */}
-        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6 bg-red-100 text-center">
-          Recruitment is currently closed! Check back in the fall semester for our next round of recruitment!
-        </p>
+        <p className="text-xs text-secondary tracking-widest">2024-2025</p>
+        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">
+        Current Events
+        </h2>
 
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-          UBC Bionics is always looking for passionate and dedicated students to join our team. If you are interested in bionics, robotics, or engineering, we would love to have you on board!
+        Moving forward from the CYBATHLON 2024 season, we are continuing to iterate on our current projects, GRASP and NERV. Our teams have been hard at work, so stay tuned for updates!
         </p>
 
-        {/* FAQ */}
-        <Accordion items={FAQ} />
-            </section>
+        {/* Image same width as text */}
+        <Image src={cybathlon2024} alt="CYBATHLON 2024" width={1000} height={1000} className="w-full md:w-5/6 p-4" />
+
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
+        Click <a href="/projects" className="text-blue-600 dark:text-blue-500 hover:underline">here</a> for more info on our current projects!
+        </p>
+      </section>
 
     </main>
   );
