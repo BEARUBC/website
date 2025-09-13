@@ -138,7 +138,7 @@ const Home = () => {
 
         {/* alternate text: */}
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6 bg-green-100 text-center">
-          We have open positions on our <b>admin</b>, <b>analytics</b>, <b>electrical</b>, and <b>mechanical</b> subteams. <br></br><a href="https://forms.gle/XYkecWbURjJAmECx5" className="text-blue-600 dark:text-blue-500 hover:underline" target="_blank">Apply here</a> before September 14th! (Midnight PST)
+          We have open positions on our <b>admin</b>, <b>analytics</b>, <b>electrical</b>, and <b>mechanical</b> subteams. <br></br><a href="https://forms.gle/XYkecWbURjJAmECx5" className="text-blue-600 dark:text-blue-500 hover:underline" target="_blank">Apply here</a> before September 24th! (Midnight PST)
         </p>
 
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
