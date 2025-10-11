@@ -24,7 +24,7 @@ import Accordion from "./components/Accordion";
 const FAQ = [
   {
     question: "When can I apply?",
-    answer: "The best time to apply is during our recruitment season, which occurs at the start of every winter session semester, between late August and early September! However, our email inbox remains open throughout the year.", 
+    answer: "The best time to apply is during our recruitment season, which occurs at the start of every winter session semester, between late August and early September! However, our email inbox remains open throughout the year.",
   },
   {
     question: "Will I be considered if I do not have prior experience being on a design team?",
@@ -108,7 +108,7 @@ const Home = () => {
     <main className="relative flex flex-col items-center justify-center">
       {/* Full-page section */}
       <section className="relative w-full h-screen flex items-center justify-center text-white text-center pb-32 bg-radial-gradient">
-        {/* Canvas for 3D model */}
+        {/* ---- Canvas for 3D model ----*/}
         <div className="absolute inset-0 z-0">
           <Canvas>
             <ambientLight intensity={0.5} />
@@ -119,42 +119,43 @@ const Home = () => {
           </Canvas>
         </div>
 
-        {/* Title */}
+        {/* ---- Title ---- */}
         <Image src={title} alt="Bionics" width={600} height={600} className="z-30 select-none" />
 
-        {/* Scroll Down Icon */}
+        {/* ---- Scroll Down Icon ----*/}
         <div
           className="absolute bottom-32 cursor-pointer z-30 text-white"
           onClick={scrollToNextSection}
         >
-          <FiChevronDown size={48} style={{ strokeWidth: 1 }}/>
+          <FiChevronDown size={48} style={{ strokeWidth: 1 }} />
         </div>
       </section>
 
-      {/* Join Us */}
+      {/* ---- Current Events ----*/}
       <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center">
-        <p className="text-xs text-secondary tracking-widest">JOIN US</p>
-        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Get Involved</h2>
-
-        {/* alternate text: */}
-        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6 bg-green-100 text-center">
-          We have open positions on our <b>admin</b>, <b>analytics</b>, <b>electrical</b>, and <b>mechanical</b> subteams. <br></br><a href="https://forms.gle/XYkecWbURjJAmECx5" className="text-blue-600 dark:text-blue-500 hover:underline" target="_blank">Apply here</a> before September 24th! (Midnight PST)
-        </p>
+        <p className="text-xs text-secondary tracking-widest">2024-2025</p>
+        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">
+          Current Events
+        </h2>
 
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-          UBC Bionics is always looking for passionate and dedicated students to join our team. If you are interested in bionics, robotics, or engineering, we would love to have you on board!
+          Moving forward from the CYBATHLON 2024 season, we are continuing to iterate on our current projects, GRASP and NERV. Our teams have been hard at work, so stay tuned for updates!
         </p>
 
-        {/* FAQ */}
-        <Accordion items={FAQ} />
+        {/* Image same width as text */}
+        <Image src={cybathlon2024} alt="CYBATHLON 2024" width={1000} height={1000} className="w-full md:w-5/6 p-4" />
+
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
+          Click <a href="/projects" className="text-blue-600 dark:text-blue-500 hover:underline">here</a> for more info on our current projects!
+        </p>
       </section>
 
-      {/* Scroller of sponsors */}
+      {/* ---- Scroller of sponsors ----*/}
       <section className="w-full flex items-center justify-center pt-10 pb-20">
         <Scroller />
       </section>
 
-      {/* About Us */}
+      {/* ---- About Us ----*/}
       <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center bg-gray-200">
         <p className="text-xs text-secondary tracking-widest">ABOUT US</p>
         <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Innovating Bionics</h2>
@@ -166,25 +167,30 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Current Events */}
+
+      {/* ---- Join Us ---- */}
       <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center">
-        <p className="text-xs text-secondary tracking-widest">2024-2025</p>
-        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">
-        Current Events
-        </h2>
+        <p className="text-xs text-secondary tracking-widest">JOIN US</p>
+        <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">Get Involved</h2>
 
-        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-        Moving forward from the CYBATHLON 2024 season, we are continuing to iterate on our current projects, GRASP and NERV. Our teams have been hard at work, so stay tuned for updates!
+        {/* reqruitment available text: */}
+        {/* <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6 bg-green-100 text-center">
+          We have open positions on our <b>admin</b>, <b>analytics</b>, <b>electrical</b>, and <b>mechanical</b> subteams. <br></br><a href="https://forms.gle/XYkecWbURjJAmECx5" className="text-blue-600 dark:text-blue-500 hover:underline" target="_blank">Apply here</a> before September 24th! (Midnight PST)
+        </p> */}
+
+        {/* alternate text: */}
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6 bg-red-100 text-center">
+          Recruitment is currently closed! Check back in the winter semester for our next round of recruitment!
         </p>
 
-        {/* Image same width as text */}
-        <Image src={cybathlon2024} alt="CYBATHLON 2024" width={1000} height={1000} className="w-full md:w-5/6 p-4" />
 
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-        Click <a href="/projects" className="text-blue-600 dark:text-blue-500 hover:underline">here</a> for more info on our current projects!
+          UBC Bionics is always looking for passionate and dedicated students to join our team. If you are interested in bionics, robotics, or engineering, we would love to have you on board!
         </p>
+
+        {/* FAQ */}
+        <Accordion items={FAQ} />
       </section>
-
     </main>
   );
 };
