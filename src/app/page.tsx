@@ -133,13 +133,23 @@ const Home = () => {
 
       {/* ---- Current Events ----*/}
       <section className="w-full px-6 md:px-20 py-20 flex flex-col items-center">
-        <p className="text-xs text-secondary tracking-widest">2024-2025</p>
+        <p className="text-xs text-secondary tracking-widest">2025-2026</p>
         <h2 className="text-3xl md:text-5xl mb-8 tracking-tight">
           Current Events
         </h2>
 
         <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
-          Moving forward from the CYBATHLON 2024 season, we are continuing to iterate on our current projects, GRASP and NERV. Our teams have been hard at work, so stay tuned for updates!
+          Here&apos;s what we&apos;re currently working on across our three main projects:
+        </p>
+
+        <ul className="text-lg md:text-xl text-foreground px-8 pb-4 w-full md:w-5/6 list-disc list-inside">
+          <li>GRASP: We&apos;re improving the arm&apos;s electronics with a new EMG circuit, better battery management, and haptics, while working toward a smaller, cleaner hardware setup.</li>
+          <li>NERV: We&apos;re building the EEG software pipeline, including signal segmentation, feature extraction, and model testing for left/right motor imagery.</li>
+          <li>CHARM: We&apos;re iterating on the mechanical arm (finger motion, grip, wrist rotation, and pulley systems) and getting ready to test Cybathlon-style tasks.</li>
+        </ul>
+
+        <p className="text-lg md:text-xl text-foreground p-4 w-full md:w-5/6">
+          Our teams have been hard at work, so stay tuned for updates!
         </p>
 
         {/* Image same width as text */}
