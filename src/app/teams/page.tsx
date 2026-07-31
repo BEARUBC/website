@@ -7,33 +7,33 @@ import TeamPhoto from "../assets/team-photo-2.png";
 
 // -- Admin --
 import SashaSabourin from "../assets/headshots-old/Sasha Sabourin.jpg";
-import JackieChen from "../assets/headshots-new/Jackie_2026.jpg";
+import JackieChen from "../assets/headshots-new/Jackie_2026.JPG";
 import MelanieCheng from "../assets/headshots-old/Melanie Cheng.jpg";
 import SatadruMani from "../assets/headshots-new/Satadru_2026.jpg";
 
 // -- Analytics --
 import LeticiaCid from "../assets/headshots-old/Leticia Cid.jpg";
-import AishwaryaJathan from "../assets/headshots-new/Aishu_2026.jpg";
+import AishwaryaJathan from "../assets/headshots-new/Aishu_2026.JPG";
 import ThanaphumiKunuthai from "../assets/headshots-new/Thanaphumi_2026.jpg";
-import FarrelWahyudi from "../assets/headshots-new/Farrel_2026.jpg";
+import FarrelWahyudi from "../assets/headshots-new/Farrel_2026.JPG";
 
 // -- Electrical --
 import JustinThe from "../assets/headshots-old/Justin The.jpg";
 import NickSantoso from "../assets/headshots-old/Nick Santoso.jpg";
 import ChathilRajamanthree from "../assets/headshots-old/Chathil Rajamanthree.jpg";
-import ElinLee from "../assets/headshots-new/Elin_2026.jpg";
-import LucaJones from "../assets/headshots-new/Luca_2026.jpg";
+import ElinLee from "../assets/headshots-new/Elin_2026.JPG";
+import LucaJones from "../assets/headshots-new/Luca_2026.JPG";
 import EhinomenItua from "../assets/headshots-new/Ehi_2026.jpg";
 import TakuyaHaji from "../assets/headshots-new/Takuya_2026.jpg";
-import LeiaChen from "../assets/headshots-new/Leia_2026.jpg";
-import DerekWei from "../assets/headshots-new/Derek_2026.jpg";
+import LeiaChen from "../assets/headshots-new/Leia_2026.JPG";
+import DerekWei from "../assets/headshots-new/Derek_2026.JPG";
 
 // -- Mechanical --
 import TerrenceLeong from "../assets/headshots-old/Terrence Leong.jpg";
-import CorlissChu from "../assets/headshots-new/Corliss_2026.jpg";
-import KaylieChen from "../assets/headshots-new/Kaylie_2026.jpg";
-import KiwiChen from "../assets/headshots-new/Kiwi_2026.jpg";
-import AnnaKoh from "../assets/headshots-new/Anna_2026.jpg";
+import CorlissChu from "../assets/headshots-new/Corliss_2026.JPG";
+import KaylieChen from "../assets/headshots-new/Kaylie_2026.JPG";
+import KiwiChen from "../assets/headshots-new/Kiwi_2026.JPG";
+import AnnaKoh from "../assets/headshots-new/Anna_2026.JPG";
 
 // -- Advisors --
 import EmilyFlaschner from "../assets/headshots-old/Emily Flaschner.jpg";
