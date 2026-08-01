@@ -7,33 +7,33 @@ import TeamPhoto from "../assets/team-photo-2.png";
 
 // -- Admin --
 import SashaSabourin from "../assets/headshots-old/Sasha Sabourin.jpg";
-import JackieChen from "../assets/headshots-new/Jackie_2026.JPG";
+import JackieChen from "../assets/headshots-new/jackie_2026.jpg";
 import MelanieCheng from "../assets/headshots-old/Melanie Cheng.jpg";
-import SatadruMani from "../assets/headshots-new/Satadru_2026.jpg";
+import SatadruMani from "../assets/headshots-new/satadru_2026.jpg";
 
 // -- Analytics --
 import LeticiaCid from "../assets/headshots-old/Leticia Cid.jpg";
-import AishwaryaJathan from "../assets/headshots-new/Aishu_2026.JPG";
-import ThanaphumiKunuthai from "../assets/headshots-new/Thanaphumi_2026.jpg";
-import FarrelWahyudi from "../assets/headshots-new/Farrel_2026.JPG";
+import AishwaryaJathan from "../assets/headshots-new/aishu_2026.jpg";
+import ThanaphumiKunuthai from "../assets/headshots-new/thanaphumi_2026.jpg";
+import FarrelWahyudi from "../assets/headshots-new/farrel_2026.jpg";
 
 // -- Electrical --
 import JustinThe from "../assets/headshots-old/Justin The.jpg";
 import NickSantoso from "../assets/headshots-old/Nick Santoso.jpg";
 import ChathilRajamanthree from "../assets/headshots-old/Chathil Rajamanthree.jpg";
-import ElinLee from "../assets/headshots-new/Elin_2026.JPG";
-import LucaJones from "../assets/headshots-new/Luca_2026.JPG";
-import EhinomenItua from "../assets/headshots-new/Ehi_2026.jpg";
-import TakuyaHaji from "../assets/headshots-new/Takuya_2026.jpg";
-import LeiaChen from "../assets/headshots-new/Leia_2026.JPG";
-import DerekWei from "../assets/headshots-new/Derek_2026.JPG";
+import ElinLee from "../assets/headshots-new/elin_2026.jpg";
+import LucaJones from "../assets/headshots-new/luca_2026.jpg";
+import EhinomenItua from "../assets/headshots-new/ehi_2026.jpg";
+import TakuyaHaji from "../assets/headshots-new/takuya_2026.jpg";
+import LeiaChen from "../assets/headshots-new/leia_2026.jpg";
+import DerekWei from "../assets/headshots-new/derek_2026.jpg";
 
 // -- Mechanical --
 import TerrenceLeong from "../assets/headshots-old/Terrence Leong.jpg";
-import CorlissChu from "../assets/headshots-new/Corliss_2026.JPG";
-import KaylieChen from "../assets/headshots-new/Kaylie_2026.JPG";
-import KiwiChen from "../assets/headshots-new/Kiwi_2026.JPG";
-import AnnaKoh from "../assets/headshots-new/Anna_2026.JPG";
+import CorlissChu from "../assets/headshots-new/corliss_2026.jpg";
+import KaylieChen from "../assets/headshots-new/kaylie_2026.jpg";
+import KiwiChen from "../assets/headshots-new/kiwi_2026.jpg";
+import AnnaKoh from "../assets/headshots-new/anna_2026.jpg";
 
 // -- Advisors --
 import EmilyFlaschner from "../assets/headshots-old/Emily Flaschner.jpg";
